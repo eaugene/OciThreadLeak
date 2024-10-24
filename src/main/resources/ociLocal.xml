@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+  <!--   <property>
+      <name>fs.oci.client.multiregion.enabled</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>fs.oci.realmspecific.endpoint.template.enabled</name>
+      <value>false</value>
+    </property>
+    <property>
+      <name>fs.oci.client.regionCodeOrId</name>
+      <value>us-ashburn-1</value>
+    </property>
+
+    <property>
+      <name>fs.oci.client.hostname</name>
+      <value>https://objectstorage.r1.oracleiaas.com</value>
+    </property>
+    <property>
+      <name>fs.oci.client.auth.tenantId</name>
+      <value>ocid1.tenancy.oc1..aaaaaaaaljp4td5xk4kxzgp2kvsreysajarqssyehkrdziff4fesqjhytl5q</value>
+    </property>
+    <property>
+      <name>fs.oci.client.auth.userId</name>
+      <value>ocid1.user.region1..aaaaaaaaurdhsesoeio5xdezbzkbzip5hlyfqfg7qq5hb7daqjbwafikdoma</value>
+    </property>
+    <property>
+      <name>fs.oci.client.auth.fingerprint</name>
+      <value>cf:27:71:47:a7:e1:7e:6e:54:ad:aa:67:c4:93:ce:2c</value>
+    </property>
+    <property>
+      <name>fs.oci.client.auth.pemfilepath</name>
+      <value>/Users/yuanhliu/.oci/oci_api_key.pem</value>
+    </property>
+    <property>
+      <name>fs.oci.client.http.connectiontimeout</name>
+      <value>10000000</value>
+    </property>
+    <property>
+      <name>fs.oci.client.multipart.numthreads</name>
+      <value>16</value>
+    </property>
+    <property>
+      <name>fs.oci.io.write.multipart.inmemory</name>
+      <value>TRUE</value>
+    </property>
+    <property>
+      <name>io.file.buffer.size</name>
+      <value>131072</value>
+    </property>
+    <property>
+      <name>fs.oci.io.write.inmemory</name>
+      <value>FALSE</value>
+    </property>
+    <property>
+      <name>fs.oci.client.multipart.allowed</name>
+      <value>TRUE</value>
+    </property>
+    <property>
+      <name>fs.oci.client.multipart.partsize.mb</name>
+      <value>64</value>
+    </property>
+    <property>
+      <name>fs.oci.client.multipart.minobjectsize.mb</name>
+      <value>10</value>
+    </property>
+    <property>
+      <name>fs.oraclebmc.client.apache.max.connection.pool.size</name>
+      <value>100</value>
+    </property>
+    <property>
+      <name>fs.oci.client.jersey.default.connector.enabled</name>
+      <value>FALSE</value>
+    </property>
+    <property>
+      <name>fs.oci.client.http.readtimeout</name>
+      <value>60000000</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.object.metadata.enabled</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.object.metadata.spec</name>
+      <value>maximumSize=102400,expireAfterWrite=180m</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.filesystem.enabled</name>
+      <value>FALSE</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.filesystem.maxsize.count</name>
+      <value>3</value>
+    </property>
+
+    <property>
+      <name>fs.oci.io.read.ahead</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.object.parquet.enabled</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>fs.oci.caching.object.parquet.spec</name>
+      <value>maximumSize=102400,expireAfterWrite=180m</value>
+    </property>
+    <property>
+      <name>fs.oci.io.read.ahead.blocksize</name>
+      <value>12582912</value>
+    </property> -->
+  <property>
+    <name>fs.oci.io.read.ahead</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>fs.oci.io.read.ahead.blockcount</name>
+    <value>4</value>
+  </property>
+  <property>
+    <name>fs.oci.io.read.ahead.blocksize</name>
+    <value>30912</value>
+  </property>
+  <property>
+    <name>fs.oci.realmspecific.endpoint.template.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>fs.oci.client.hostname</name>
+    <value>https://objectstorage.us-ashburn-1.oraclecloud.com</value>
+  </property>
+  <property>
+    <name>fs.oci.client.auth.tenantId</name>
+    <value>ocid1.tenancy.oc1..aaaaaaaa3efabyxwddhygqv6hstvd5qvoqwbgdlrkqmqlvpofz5zdnq2vf7a</value>
+  </property>
+  <property>
+    <name>fs.oci.client.auth.userId</name>
+    <value>ocid1.user.oc1..aaaaaaaavlvr6dzqfhxaru7psx6vmnwcqwc233qkmi3vkkardihpzfqogluq</value>
+  </property>
+  <property>
+    <name>fs.oci.client.auth.fingerprint</name>
+    <value>giveYourOwnFingerPrint</value>
+  </property>
+  <property>
+    <name>fs.oci.client.auth.pemfilepath</name>
+    <value>/Users/teaugene/Downloads/oci_local.pem</value>
+  </property>
+
+</configuration>
